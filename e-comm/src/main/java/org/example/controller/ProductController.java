@@ -20,8 +20,11 @@ public class ProductController {
         return productService.createProduct(product);
     }
 
-    @DeleteMapping("/delete/{id}/{userType}")
-    public Product deleteProduct(@PathVariable String id, String userType){
-        return deleteProduct(id,userType);
+    @DeleteMapping("/{id}")
+    public boolean deleteProduct(@PathVariable Integer id,
+                              @RequestParam String deleteby){
+
+        boolean deleted=productService.deleteProduct(id,deleteby);
+        return deleted;
     }
 }

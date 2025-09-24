@@ -19,5 +19,5 @@ public class Product {
     private String image;
     private String createdBy;
     private Timestamp createdDate;
-
+    private String modifiedBy;
 }
