@@ -5,9 +5,6 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <include file="db/scripts/product_changelog.sql"/>
-    <include file="db/scripts/product_history_table_create.sql"/>
-    <include file="db/scripts/product_history_update_trigger.sql"/>
-    <include file="db/scripts/product_history_insert_trigger.sql"/>
-    <include file="db/scripts/product_history_delete_trigger.sql"/>
+
+
 </databaseChangeLog>

@@ -17,7 +17,7 @@ public class ProductController {
     }
     @PutMapping("/update")
     public Product updateProduct(@RequestBody Product product){
-        return productService.createProduct(product);
+        return productService.updateProduct(product.getId(),product);
     }
 
     @DeleteMapping("/{id}")
@@ -27,4 +27,5 @@ public class ProductController {
         boolean deleted=productService.deleteProduct(id,deleteby);
         return deleted;
     }
+    
 }

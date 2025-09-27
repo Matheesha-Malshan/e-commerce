@@ -1,14 +1,15 @@
 package org.example.model;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+import org.example.entity.ProductVariantEntity;
 
 import java.sql.Timestamp;
+import java.util.List;
 
-@Setter
 @Getter
-@ToString
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product {
 
     private Integer id;
@@ -20,4 +21,5 @@ public class Product {
     private String createdBy;
     private Timestamp createdDate;
     private String modifiedBy;
+    private List<ProductVariantEntity> productSizes;
 }
