@@ -19,7 +19,7 @@ public class CustomerController {
         return customerService.createCustomer(customer);
 
     }
-    @PostMapping("/{customer_id}")
+    @PostMapping("create-cart/{customer_id}")
     public void updateCart(@PathVariable Integer customer_id,
                            @RequestBody CartItemEntity cartItemEntity){
 

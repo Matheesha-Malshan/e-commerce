@@ -1,36 +1,42 @@
 package org.example.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.example.model.Customer;
-import org.example.model.OrderItem;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
-/*
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "order")*/
 public class OrderEntity {
-/*
+
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column(name = "order_id")
     private Integer id;
     private Timestamp dataTime;
 
     @OneToMany(mappedBy = "orderEntity",cascade = CascadeType.ALL,orphanRemoval = true)
-    private List<OrderItemEntity> orderItemList;
+    @JsonManagedReference("OrderItems")
+    private List<OrderItemEntity> orderItemList=new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
-    private CustomerEntity customer;
-    */
+    @JsonBackReference("customerOrder")
+    private CustomerEntity order;
 
+    private Double totalPrice;
+
+    public OrderEntity(Timestamp dataTime){
+        this.dataTime=dataTime;
+    }
 }

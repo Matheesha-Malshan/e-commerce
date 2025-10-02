@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a509326d-bd50-4750-a710-f8db8ee4aaa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/NotificationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ProductReviewEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/CustomerBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/NotificationEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/ProductReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/repository/ProductVariantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/NotificationObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/NotificationSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/impl/NotificationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/CustomerBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/NotificationConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/CartItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/CartItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/CustomerEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/OrderItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/OrderItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ProductVariantEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ProductVariantEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ShoppingCartEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/entity/ShoppingCartEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/OderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/OderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/model/OrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/impl/ShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/java/org/example/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-comm/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../e-comm/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Matheesha-Malshan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Matheesha-Malshan/e-commerce.git&quot;,
+    &quot;accountId&quot;: &quot;cd54ed53-6142-4f8f-80fd-44e6b090ce53&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="33N72MGXHW21M5nlt5c5sOdAXQb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/admin-dashboard",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/home/matheesha/Documents/e-commerce/notificationService/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a509326d-bd50-4750-a710-f8db8ee4aaa9" name="Changes" comment="" />
+      <created>1759145469813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759145469813</updated>
+    </task>
+    <servers />
+  </component>
+</project>

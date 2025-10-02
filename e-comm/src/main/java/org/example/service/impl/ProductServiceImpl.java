@@ -36,6 +36,8 @@ public class ProductServiceImpl implements ProductService {
         );
 
 
+
+
        if(product.getProductSizes()!=null){
            for(ProductVariantEntity productVariant:product.getProductSizes()){
                ProductVariantEntity productVariantEntity=new ProductVariantEntity(
@@ -48,6 +50,8 @@ public class ProductServiceImpl implements ProductService {
            }
        }
         ProductEntity pv=productRepository.save(productEntity);
+        System.out.println(pv.getProductSizes());
+
 
         return mapper.map(pv,Product.class);
     
@@ -86,8 +90,6 @@ public class ProductServiceImpl implements ProductService {
         }
         return null;
     }
-
-
 
     @Transactional
     public boolean deleteProduct(Integer id, String deleteby){

@@ -1,8 +1,11 @@
 package org.example.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
+import org.example.entity.OrderEntity;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Setter
 @Getter
@@ -18,4 +21,7 @@ public class Customer {
     private String email;
     private String phoneNumber;
     private Timestamp dataTime;
+
+    @JsonIgnore
+    private List<OrderEntity> orderEntity;
 }

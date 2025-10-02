@@ -23,9 +23,13 @@ public class CartItemEntity {
 
     @ManyToOne
     @JoinColumn(name ="cart_id")
-    @JsonBackReference("cart-items")
+    @JsonBackReference("cartItems")
     private ShoppingCartEntity shoppingCart;
 
+    @ManyToOne
+    @JoinColumn(name="product_variant_id")
+    @JsonBackReference("cartItemJson")
+    private ProductVariantEntity cartItem_variant;
 
     public CartItemEntity(String productId, Integer quantity) {
         this.quantity=quantity;

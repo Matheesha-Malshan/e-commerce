@@ -25,11 +25,11 @@ public class ShoppingCartEntity {
 
     @OneToOne
     @JoinColumn(name = "customer_id")
-    @JsonBackReference("customer-cart")
+    @JsonManagedReference("customerCart")
     private CustomerEntity customer;
 
     @OneToMany(mappedBy = "shoppingCart",cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference("cart-items")
+    @JsonManagedReference("cartItems")
     private List<CartItemEntity> cartItemsList=new ArrayList<>();;
 
 }

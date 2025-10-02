@@ -30,8 +30,8 @@ public class ProductEntity {
     private Timestamp createdDate;
     private String modifiedBy;
 
-    @OneToMany(mappedBy = "productEntity", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference("product-variants")
+    @OneToMany(mappedBy = "productEntity",cascade = CascadeType.ALL,orphanRemoval = true)
+    @JsonManagedReference("productVariantJson")
     private List<ProductVariantEntity> productSizes=new ArrayList<>();
 
     public ProductEntity(Integer id, String title, String price, String description,

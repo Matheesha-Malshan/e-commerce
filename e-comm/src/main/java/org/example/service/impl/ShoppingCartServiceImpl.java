@@ -29,11 +29,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     public ShoppingCart createShoppingCart(ShoppingCart shoppingCart){
 
         List<CartItem> cartItem=shoppingCart.getCartItemsList();
-
         ShoppingCartEntity shoppingCartEntity=new ShoppingCartEntity();
-
-        Customer customer=shoppingCart.getCustomer();
-        shoppingCartEntity.setCustomer(mapper.map(customer,CustomerEntity.class));
 
         for(CartItem cart:cartItem){
             CartItemEntity cartItemEntity=new CartItemEntity(
@@ -48,7 +44,5 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
         return mapper.map(s,ShoppingCart.class);
     }
-
-
 
 }
