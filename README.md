@@ -1,4 +1,3 @@
-![e commerce (1)](https://github.com/user-attachments/assets/dc73e95d-b3d5-479e-a872-69ef2fc10fa5)
 🛍️ E-Commerce Platform
 
 An AI-integrated e-commerce platform for selling clothing items, designed with a microservices architecture to ensure scalability and modularity.
@@ -65,3 +64,5 @@ Docker (optional) – Containerized deployment environment
 
 Security and authentication are not yet implemented.
 Future versions will include JWT-based authentication and gateway-level access control.
+
+![e commerce (1)](https://github.com/user-attachments/assets/dc73e95d-b3d5-479e-a872-69ef2fc10fa5)
